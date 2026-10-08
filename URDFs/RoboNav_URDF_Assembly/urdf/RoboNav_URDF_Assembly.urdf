@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RoboNav_URDF_Assembly">
+  <link
+    name="Chassis">
+    <inertial>
+      <origin
+        xyz="1.56358500612411 1.00629805196361 1.09488713113379"
+        rpy="0 0 0" />
+      <mass
+        value="14.5551046648337" />
+      <inertia
+        ixx="0.133662723882523"
+        ixy="1.33309595918343E-05"
+        ixz="-3.53883048683907E-05"
+        iyy="0.115144741482344"
+        iyz="-1.96235463748504E-05"
+        izz="0.227421918380796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Chassis.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/f64bd32c62f5e2a0522652f2.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Arm Base">
+    <inertial>
+      <origin
+        xyz="0.0294728612627236 -0.000132939692862877 0.0795950776029863"
+        rpy="0 0 0" />
+      <mass
+        value="1.83862698481657" />
+      <inertia
+        ixx="0.00499821987115758"
+        ixy="5.64997683683363E-08"
+        ixz="6.84100916565415E-07"
+        iyy="0.00269688521112399"
+        iyz="-8.49122215032374E-07"
+        izz="0.00320332611241771" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Arm Base.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/5bb1f5d2ec4a9ee3f54741fd.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arm Base Prismatic"
+    type="prismatic">
+    <origin
+      xyz="1.9866 -1.2332 0.96781"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Arm Base" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Arm Bicep">
+    <inertial>
+      <origin
+        xyz="0.0377037071548166 0.338408364338237 0.0500544205091964"
+        rpy="0 0 0" />
+      <mass
+        value="3.07492584069681" />
+      <inertia
+        ixx="0.0161540471460977"
+        ixy="-1.31481133362435E-06"
+        ixz="-1.30056858404642E-07"
+        iyy="0.0040269293264677"
+        iyz="-0.00136251217788303"
+        izz="0.0130376808281081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Arm Bicep.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/d2a0479d5f70f98e3c15ca7d.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arm Bicep Revolute"
+    type="revolute">
+    <origin
+      xyz="-0.0052349 -0.00020843 0.12103"
+      rpy="-3.1416 0 3.1416" />
+    <parent
+      link="Arm Base" />
+    <child
+      link="Arm Bicep" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Arm Forearm">
+    <inertial>
+      <origin
+        xyz="0.0334540691343754 -0.207495963312023 0.102286880408108"
+        rpy="0 0 0" />
+      <mass
+        value="1.59488772002708" />
+      <inertia
+        ixx="0.00981858679960768"
+        ixy="1.46210566934695E-06"
+        ixz="2.96341371757453E-06"
+        iyy="0.00280567460585278"
+        iyz="0.00349430827003618"
+        izz="0.00817180343146912" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Arm Forearm.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/8713ea1ba7fc96aa7fd96fc1.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Arm Forearm Revolute"
+    type="revolute">
+    <origin
+      xyz="0.0015748 0.42401 0.062712"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="Arm Bicep" />
+    <child
+      link="Arm Forearm" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Diff Wrist Beginning">
+    <inertial>
+      <origin
+        xyz="0.00739137464882988 -0.0346005803642795 0.017056021536211"
+        rpy="0 0 0" />
+      <mass
+        value="0.270380984055189" />
+      <inertia
+        ixx="8.49479948607117E-05"
+        ixy="-1.41207104343313E-11"
+        ixz="3.86187490447775E-10"
+        iyy="9.86516381964216E-05"
+        iyz="2.16739778966201E-06"
+        izz="0.000101988860370289" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Diff Wrist Beginning.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/89ee18f9d2e31ca57a6b6c75.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Diff Wrist Pitch"
+    type="revolute">
+    <origin
+      xyz="0.027534 -0.35711 0.17604"
+      rpy="0 0 0" />
+    <parent
+      link="Arm Forearm" />
+    <child
+      link="Diff Wrist Beginning" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Diff Wrist Output">
+    <inertial>
+      <origin
+        xyz="0.0682698339087655 -0.000771024470665682 0.00110183567254063"
+        rpy="0 0 0" />
+      <mass
+        value="0.572773620848928" />
+      <inertia
+        ixx="0.00044211003102182"
+        ixy="5.70714963698531E-06"
+        ixz="-1.60993489894497E-05"
+        iyy="0.000757914951030821"
+        iyz="6.305042801617E-06"
+        izz="0.00077004123791485" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Diff Wrist Output.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/0b9d545e9ddc2bed82cb6ff0.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Diff Wrist Roll"
+    type="revolute">
+    <origin
+      xyz="0.0073914 -0.087712 0.043238"
+      rpy="0 -0.45799 -1.5708" />
+    <parent
+      link="Diff Wrist Beginning" />
+    <child
+      link="Diff Wrist Output" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Top Back Linkage">
+    <inertial>
+      <origin
+        xyz="0.0100000000000005 0.0178308792472501 0.0279617270982302"
+        rpy="0 0 0" />
+      <mass
+        value="0.015819289302527" />
+      <inertia
+        ixx="7.00681236964981E-06"
+        ixy="3.17383491664893E-23"
+        ixz="-4.33394128444352E-22"
+        iyy="6.18601200366213E-06"
+        iyz="-7.47200484753004E-07"
+        izz="8.57999419402508E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Top Back Linkage.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/2b5f507e03ccdfab36ee4c26.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Top Back Linkage Revolute"
+    type="revolute">
+    <origin
+      xyz="0.051084 -0.01 0.0295"
+      rpy="0.45799 0 1.5708" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Top Back Linkage" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Top Finger">
+    <inertial>
+      <origin
+        xyz="0.00950000000000006 -0.0656307517985972 -0.0191926305558303"
+        rpy="0 0 0" />
+      <mass
+        value="0.0545226771979013" />
+      <inertia
+        ixx="4.80331791257721E-05"
+        ixy="9.10110892964408E-22"
+        ixz="-6.05624044148523E-22"
+        iyy="4.88469836904073E-06"
+        iyz="-1.57078231091097E-06"
+        izz="4.47659797908212E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Top Finger.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/733a8cb94bd25aa6aa8aa903.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Top Finger Hinge"
+    type="revolute">
+    <origin
+      xyz="0.0195 0.018115 0.0572"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="Top Back Linkage" />
+    <child
+      link="Top Finger" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Top Mid Linkage">
+    <inertial>
+      <origin
+        xyz="0.0209999995941313 0.00209048437238124 0.00279382797557348"
+        rpy="0 0 0" />
+      <mass
+        value="0.0221799720475875" />
+      <inertia
+        ixx="2.16397801448711E-06"
+        ixy="2.12384499314454E-13"
+        ixz="-9.0702197051915E-14"
+        iyy="6.77734450520391E-06"
+        iyz="-4.14641653273799E-07"
+        izz="6.53345346667597E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Top Mid Linkage.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/a84aec68919ad6757d4eb027.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Top Mid Linkage Revolute"
+    type="revolute">
+    <origin
+      xyz="0.073084 -0.021 0.0125"
+      rpy="0.45799 0 1.5708" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Top Mid Linkage" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Top Mid Connector">
+    <inertial>
+      <origin
+        xyz="0.00499999999999945 0.0171882340996072 0.00328855721207399"
+        rpy="0 0 0" />
+      <mass
+        value="0.00126406020826327" />
+      <inertia
+        ixx="1.90902869433426E-07"
+        ixy="-3.99525956657093E-23"
+        ixz="-1.05069154039794E-23"
+        iyy="1.77494945622165E-08"
+        iyz="-3.12843258411895E-08"
+        izz="1.7527712769403E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Top Mid Connector.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/055874eedfae54f8b818d390.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Top Mid Connector Revolute"
+    type="revolute">
+    <origin
+      xyz="0.026 0.017374 0.023219"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="Top Mid Linkage" />
+    <child
+      link="Top Mid Connector" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Top Front Linkages">
+    <inertial>
+      <origin
+        xyz="0.0260000000000002 0.0076450259512626 0.0241395514159792"
+        rpy="0 0 0" />
+      <mass
+        value="0.0175333221780883" />
+      <inertia
+        ixx="7.02011593892626E-06"
+        ixy="-1.08523473841538E-21"
+        ixz="-1.68743640797896E-21"
+        iyy="6.21564486445659E-06"
+        iyz="-1.87027709821853E-06"
+        izz="9.02470563308194E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Top Front Linkages.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/ec433afcb09af2a97c30abe7.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Top Front Linkages Revolute"
+    type="revolute">
+    <origin
+      xyz="0.12608 -0.026 0.0295"
+      rpy="0.45799 0 1.5708" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Top Front Linkages" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bottom Back Linkage">
+    <inertial>
+      <origin
+        xyz="0.0099999999999999 -0.00611182315181269 -0.0325951538546285"
+        rpy="0 0 0" />
+      <mass
+        value="0.0158192893025269" />
+      <inertia
+        ixx="7.00681236964968E-06"
+        ixy="1.3205548920866E-21"
+        ixz="3.70548777504369E-21"
+        iyy="4.43999609030397E-06"
+        iyz="-2.61008271006968E-06"
+        izz="2.60401533276054E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Bottom Back Linkage.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/f96d05c02834b663e79b96ba.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bottom Back Linkage Revolute"
+    type="revolute">
+    <origin
+      xyz="0.051084 -0.01 -0.0295"
+      rpy="0.45799 0 1.5708" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Bottom Back Linkage" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bottom Finger">
+    <inertial>
+      <origin
+        xyz="0.00949999999999973 -0.0551927893735011 -0.0403671729314097"
+        rpy="0 0 0" />
+      <mass
+        value="0.0545226771979013" />
+      <inertia
+        ixx="4.80331791257721E-05"
+        ixy="-8.16996313889573E-21"
+        ixz="-1.37682613679493E-20"
+        iyy="2.84566445448195E-05"
+        iyz="-1.96700312569592E-05"
+        izz="2.11940336150424E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Bottom Finger.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/d1c5c8dcee46a3b0a2d8788f.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bottom Finger Hinge"
+    type="revolute">
+    <origin
+      xyz="0.0195 -0.025899 -0.054123"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="Bottom Back Linkage" />
+    <child
+      link="Bottom Finger" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bottom Mid Linkage">
+    <inertial>
+      <origin
+        xyz="0.0209999994776672 -0.00063342989817361 -0.00343137736894561"
+        rpy="0 0 0" />
+      <mass
+        value="0.0221799680100612" />
+      <inertia
+        ixx="2.16397734763362E-06"
+        ixy="-2.28951083592888E-13"
+        ixz="-4.8263938641553E-14"
+        iyy="7.05911453135309E-06"
+        iyz="-1.54310177809022E-07"
+        izz="6.25168270973349E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Bottom Mid Linkage.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/19d09bc08f45a44ca2d00310.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bottom Mid Linkage Revolute"
+    type="revolute">
+    <origin
+      xyz="0.073084 -0.021 -0.0125"
+      rpy="0.45799 0 1.5708" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Bottom Mid Linkage" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bottom Mid Connector">
+    <inertial>
+      <origin
+        xyz="0.00499999999999923 0.0138759421992418 0.0106634060263737"
+        rpy="0 0 0" />
+      <mass
+        value="0.00126406020826327" />
+      <inertia
+        ixx="1.90902869433427E-07"
+        ixy="-5.82320709135057E-23"
+        ixz="-4.7249603297934E-23"
+        iyy="7.46975086351279E-08"
+        iyz="-8.18933367555153E-08"
+        izz="1.1832911362112E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Bottom Mid Connector.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/fedf202dd6bcae2415558765.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bottom Mid Connector Revolute"
+    type="revolute">
+    <origin
+      xyz="0.026 -0.0052645 -0.028518"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="Bottom Mid Linkage" />
+    <child
+      link="Bottom Mid Connector" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bottom Front Linkages">
+    <inertial>
+      <origin
+        xyz="1.28524685441778 0.685447394925814 0.848360986283058"
+        rpy="0 0 0" />
+      <mass
+        value="0.0175333221780884" />
+      <inertia
+        ixx="6.80796394717336E-06"
+        ixy="-1.10948081200512E-19"
+        ixz="1.61830695546221E-22"
+        iyy="3.10151480591469E-07"
+        iyz="-1.89793149723354E-21"
+        izz="7.02011593892631E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Bottom Front Linkages.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/a208f5f7b5cb464ebe3ad1b8.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bottom Front Linkages Revolute"
+    type="revolute">
+    <origin
+      xyz="-1.1674 0.84836 -0.72522"
+      rpy="1.5708 0.011672 0" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Bottom Front Linkages" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right Claw">
+    <inertial>
+      <origin
+        xyz="0.00715000000000032 -0.05467606139603 -0.0264918711024253"
+        rpy="0 0 0" />
+      <mass
+        value="0.0424211145046765" />
+      <inertia
+        ixx="2.90467294161917E-05"
+        ixy="9.6922453175305E-23"
+        ixz="2.96461531539005E-21"
+        iyy="1.24252749892761E-05"
+        iyz="-1.11387686596707E-05"
+        izz="1.69629586597773E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Right Claw.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/d751a83e427bde9bce0274d6.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right Claw Revolute"
+    type="revolute">
+    <origin
+      xyz="0.11108 -0.0205 -0.00665"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Right Claw" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left Claw">
+    <inertial>
+      <origin
+        xyz="0.00696759771848954 0.0559766416663003 -0.0272384999522903"
+        rpy="0 0 0" />
+      <mass
+        value="0.0404520077618099" />
+      <inertia
+        ixx="2.53336781846091E-05"
+        ixy="1.4138342240814E-07"
+        ixz="-6.85342005119855E-08"
+        iyy="1.14146138324709E-05"
+        iyz="9.58242776149985E-06"
+        izz="1.42953585325437E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Left Claw.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/b50544be46b277866377e87c.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Claw Revolute"
+    type="revolute">
+    <origin
+      xyz="0.11108 0.0205 -0.00665"
+      rpy="-2.0697 -1.5708 2.1371" />
+    <parent
+      link="Diff Wrist Output" />
+    <child
+      link="Left Claw" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right Drivetrain Integration">
+    <inertial>
+      <origin
+        xyz="0.0332328876140151 0.0461662270171357 -0.000302170476654817"
+        rpy="0 0 0" />
+      <mass
+        value="2.21226225659467" />
+      <inertia
+        ixx="0.121961261923435"
+        ixy="-6.73180429077048E-06"
+        ixz="-6.17715294958067E-09"
+        iyy="0.00297684157151486"
+        iyz="-1.71774444353244E-05"
+        izz="0.121901872956085" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Right Drivetrain Integration.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/f88600da8ff8dacbff222463.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right Drivetrain Integration Revolute"
+    type="revolute">
+    <origin
+      xyz="1.7072 -1.0758 0.70151"
+      rpy="-1.5707963267948966 1.5707963267948966 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Right Drivetrain Integration" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Right Swerve">
+    <inertial>
+      <origin
+        xyz="1.37004459801487 0.509466721408831 1.09816245099736"
+        rpy="0 0 0" />
+      <mass
+        value="1.40608785586137" />
+      <inertia
+        ixx="0.000880142009226888"
+        ixy="-4.64245361004539E-05"
+        ixz="2.76620197744726E-07"
+        iyy="0.00105347428887204"
+        iyz="2.74746404243145E-07"
+        izz="0.00118629364596091" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Front Right Swerve.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/cc612995bcd0f776a248095b.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Right Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="1.5378 0.75525 0.43241"
+      rpy="-1.5708 -0.17799 -3.1416" />
+    <parent
+      link="Right Drivetrain Integration" />
+    <child
+      link="Front Right Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Right Wheel">
+    <inertial>
+      <origin
+        xyz="0.00399124873508727 -0.000282315050227577 0.00200523239459216"
+        rpy="0 0 0" />
+      <mass
+        value="2.11755564975117" />
+      <inertia
+        ixx="0.0104185374933302"
+        ixy="-1.32944221682791E-08"
+        ixz="6.68607373329291E-09"
+        iyy="0.00554448508833133"
+        iyz="-2.64000883015262E-08"
+        izz="0.00554444206599108" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Front Right Wheel.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/4d0e346506e32894c0c15da0.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Right Wheel Revolute"
+    type="continuous">
+    <origin
+      xyz="1.4475 0.43089 1.0981"
+      rpy="-1.5708 0 0.17799" />
+    <parent
+      link="Front Right Swerve" />
+    <child
+      link="Front Right Wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Back Right Swerve">
+    <inertial>
+      <origin
+        xyz="0.141802366985113 -0.0642969331922183 8.83714313681949E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.40608785545665" />
+      <inertia
+        ixx="0.00106422006368093"
+        ixy="1.33107563390138E-05"
+        ixz="-2.21430914313869E-07"
+        iyy="0.000869396234421174"
+        iyz="3.20893526100537E-07"
+        izz="0.001186293645927" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Back Right Swerve.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/dfc1cc7b810f2a99b36e598c.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Right Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.034925 0.3429 0.03175"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Right Drivetrain Integration" />
+    <child
+      link="Back Right Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Back Right Wheel">
+    <inertial>
+      <origin
+        xyz="0.0039912474522743 -0.000282314925584171 0.00200523237236638"
+        rpy="0 0 0" />
+      <mass
+        value="2.11755563497228" />
+      <inertia
+        ixx="0.0104185374913126"
+        ixy="-1.3318903669063E-08"
+        ixz="6.69102271485101E-09"
+        iyy="0.00554448505163258"
+        iyz="-2.63766965925055E-08"
+        izz="0.00554444210375546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Back Right Wheel.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/4219ee516913e52d257545df.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Right Wheel Revolute"
+    type="continuous">
+    <origin
+      xyz="0.23285 -0.001982 -5.6523E-05"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="Back Right Swerve" />
+    <child
+      link="Back Right Wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Right Diff Bar Link">
+    <inertial>
+      <origin
+        xyz="-0.00625011088646588 -2.95925315718648E-06 0.0435812794737256"
+        rpy="0 0 0" />
+      <mass
+        value="0.0118819070184553" />
+      <inertia
+        ixx="1.88794685272902E-06"
+        ixy="-3.03145350150809E-12"
+        ixz="-2.7674198362671E-11"
+        iyy="1.73699078526963E-06"
+        iyz="-1.49729758615271E-11"
+        izz="3.2359963074855E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Right Diff Bar Link.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/ef16d50b6934643e9bf4f529.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right Diff Bar Link Revolute"
+    type="revolute">
+    <origin
+      xyz="-0.024646 0.48196 0"
+      rpy="-3.1416 0 3.1416" />
+    <parent
+      link="Right Drivetrain Integration" />
+    <child
+      link="Right Diff Bar Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left Drivetrain Integration">
+    <inertial>
+      <origin
+        xyz="0.0332328876141226 0.0461662270171352 0.000302168445097672"
+        rpy="0 0 0" />
+      <mass
+        value="2.21226225659468" />
+      <inertia
+        ixx="0.121961262030593"
+        ixy="-6.73180417507231E-06"
+        ixz="6.31162656010892E-09"
+        iyy="0.00297684168725475"
+        iyz="1.71774448357601E-05"
+        izz="0.121901872964667" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Left Drivetrain Integration.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/bd28cb8f7ad4493e99b0996c.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Drivetrain Integration Revolute"
+    type="revolute">
+    <origin
+      xyz="1.7072 -1.0758 1.2964"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Left Drivetrain Integration" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Left Swerve">
+    <inertial>
+      <origin
+        xyz="0.141802367083023 0.0642969331689833 -8.83710368215773E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.40608785632211" />
+      <inertia
+        ixx="0.00106422006372301"
+        ixy="-1.33107563051488E-05"
+        ixz="2.214309260122E-07"
+        iyy="0.000869396234422229"
+        iyz="3.20893515333618E-07"
+        izz="0.00118629364597948" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Front Left Swerve.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/fd454112d4216b4eaf682e82.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Left Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.034925 -0.3429 -0.03175"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Left Drivetrain Integration" />
+    <child
+      link="Front Left Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Left Wheel">
+    <inertial>
+      <origin
+        xyz="5.62519937779005E-05 -0.000282315921380505 -0.00200523199576275"
+        rpy="0 0 0" />
+      <mass
+        value="2.11755564245934" />
+      <inertia
+        ixx="0.0104185374835985"
+        ixy="1.33006355416516E-08"
+        ixz="6.68600339183363E-09"
+        iyy="0.00554448505626526"
+        iyz="2.63861802922524E-08"
+        izz="0.00554444208758433" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Front Left Wheel.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Left Wheel Revolute"
+    type="continuous">
+    <origin
+      xyz="0.23285 0.001982 5.6523E-05"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="Front Left Swerve" />
+    <child
+      link="Front Left Wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Back Left Swerve">
+    <inertial>
+      <origin
+        xyz="0.141802367019365 0.0642969331666396 -8.83715941446539E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.40608785606069" />
+      <inertia
+        ixx="0.00106422006373693"
+        ixy="-1.3310756273929E-05"
+        ixz="2.21430947563595E-07"
+        iyy="0.000869396234422873"
+        iyz="3.20893505937218E-07"
+        izz="0.00118629364598905" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Back Left Swerve.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/2a90512bcb5536850cecc1ff.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Left Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.034925 0.3429 -0.03175"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Left Drivetrain Integration" />
+    <child
+      link="Back Left Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Back Left Wheel">
+    <inertial>
+      <origin
+        xyz="5.62511469268667E-05 -0.000282314976775444 -0.00200523174941536"
+        rpy="0 0 0" />
+      <mass
+        value="2.11755559220161" />
+      <inertia
+        ixx="0.0104185374434164"
+        ixy="1.33012042548959E-08"
+        ixz="6.69066631919062E-09"
+        iyy="0.00554448503248628"
+        iyz="2.63878750095804E-08"
+        izz="0.00554444207311744" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Back Left Wheel.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Left Wheel Revolute"
+    type="continuous">
+    <origin
+      xyz="0.23285 0.001982 5.6523E-05"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="Back Left Swerve" />
+    <child
+      link="Back Left Wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left Diff Bar Link">
+    <inertial>
+      <origin
+        xyz="-0.00625835373773387 0.000195337567336695 -0.0435808417990697"
+        rpy="0 0 0" />
+      <mass
+        value="0.0118819066866922" />
+      <inertia
+        ixx="1.88794683465709E-06"
+        ixy="3.15808239324821E-12"
+        ixz="-2.76592315191966E-11"
+        iyy="1.7369613307737E-06"
+        iyz="6.44575142975726E-09"
+        izz="3.23629068608708E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Left Diff Bar Link.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/969b36054072400807a5aef4.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Diff Bar Link Revolute"
+    type="revolute">
+    <origin
+      xyz="-0.024646 0.48196 0"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="Left Drivetrain Integration" />
+    <child
+      link="Left Diff Bar Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Upper Tower">
+    <inertial>
+      <origin
+        xyz="-0.00594051330211554 0.0238937518602558 -0.207434039488376"
+        rpy="0 0 0" />
+      <mass
+        value="0.245749056571881" />
+      <inertia
+        ixx="0.000740054097099885"
+        ixy="1.82471954428933E-07"
+        ixz="4.2228171596604E-06"
+        iyy="0.000770759233105814"
+        iyz="3.32259195723749E-06"
+        izz="8.32402109932589E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Upper Tower.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/25410efacd8099f8da87bec5.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Upper Tower Hinge"
+    type="revolute">
+    <origin
+      xyz="1.2889 -1.6031 1.2696"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Upper Tower" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Gimbal Dynamic">
+    <inertial>
+      <origin
+        xyz="-0.0289456394570577 -0.0121364581124841 -0.00766859524069052"
+        rpy="0 0 0" />
+      <mass
+        value="0.0429813666656902" />
+      <inertia
+        ixx="2.93445915357216E-05"
+        ixy="-4.5126306828647E-06"
+        ixz="9.91511505151039E-08"
+        iyy="1.54414402699129E-05"
+        iyz="8.90193745100598E-08"
+        izz="3.58183304963883E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Gimbal Dynamic.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/09ad16d15b586e8172f60577.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gimbal Dynamic Revolute"
+    type="revolute">
+    <origin
+      xyz="0.059593 0.023961 -0.16142"
+      rpy="1.5708 1.5679 1.5708" />
+    <parent
+      link="Upper Tower" />
+    <child
+      link="Gimbal Dynamic" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Camera">
+    <inertial>
+      <origin
+        xyz="0.0178029160189872 0.00140385624595152 0.0090573996529153"
+        rpy="0 0 0" />
+      <mass
+        value="0.01827641561117" />
+      <inertia
+        ixx="2.5534124185906E-06"
+        ixy="3.23870611915935E-08"
+        ixz="-1.31476591556739E-08"
+        iyy="2.99051717646094E-06"
+        iyz="7.78398340954486E-07"
+        izz="3.79485148590127E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Camera.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/690aaa8f1668c2d9297ba957.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camera Revolute"
+    type="revolute">
+    <origin
+      xyz="-0.0425 -0.01738 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="Gimbal Dynamic" />
+    <child
+      link="Camera" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Diff Bar">
+    <inertial>
+      <origin
+        xyz="0.0143854367409193 7.09102110363347E-10 -0.0214164509344439"
+        rpy="0 0 0" />
+      <mass
+        value="0.576027892383845" />
+      <inertia
+        ixx="0.00461449039176298"
+        ixy="1.5856756055213E-11"
+        ixz="4.60516263052828E-13"
+        iyy="0.000226815376970859"
+        iyz="-3.84622711355408E-11"
+        izz="0.00440232550011709" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboNav_URDF_Assembly/colored-meshes/Diff Bar.glb" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/optimized-meshes/56bd7c7e1274b5cd4ada78df.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Diff Bar Revolute"
+    type="revolute">
+    <origin
+      xyz="1.2475 -1.1018 0.99894"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Diff Bar" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

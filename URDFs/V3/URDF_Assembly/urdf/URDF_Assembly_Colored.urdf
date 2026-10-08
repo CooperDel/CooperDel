@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="URDF_Assembly">
+  <link
+    name="Chassis">
+    <inertial>
+      <origin
+        xyz="1.48277748455306 0.805941422126041 0.975036258036679"
+        rpy="0 0 0" />
+      <mass
+        value="4.23611157478116" />
+      <inertia
+        ixx="0.0159224188451673"
+        ixy="-3.68206925856252E-06"
+        ixz="8.9279822471053E-05"
+        iyy="0.014839271211564"
+        iyz="1.54286583643538E-05"
+        izz="0.0241649537322672" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Chassis.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Chassis.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Left Drivetrain">
+    <inertial>
+      <origin
+        xyz="0.0200050641990589 0.00141815248255472 0.00216349853673281"
+        rpy="0 0 0" />
+      <mass
+        value="0.447899169509876" />
+      <inertia
+        ixx="0.000383724148488966"
+        ixy="2.44315834376681E-07"
+        ixz="-7.11750156338415E-11"
+        iyy="0.000153649184069759"
+        iyz="-3.11252641435666E-07"
+        izz="0.0004574082329937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Left Drivetrain.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Left Drivetrain.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Drivetrain Revolute"
+    type="revolute">
+    <origin
+      xyz="1.4368 -0.96631 0.6825"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Left Drivetrain" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Left Swerve">
+    <inertial>
+      <origin
+        xyz="-0.0587486477619281 0.000608260450388531 -7.87789620471102E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.174924133939303" />
+      <inertia
+        ixx="6.62922909776967E-05"
+        ixy="-6.96897567727173E-09"
+        ixz="-5.13375481047606E-09"
+        iyy="0.000220427280101118"
+        iyz="6.25537394334925E-08"
+        izz="0.000188285453363845" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Left Swerve.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Left Swerve.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Left Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.02005 -0.19393 -0.015575"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Left Drivetrain" />
+    <child
+      link="Front Left Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Left Wheel">
+    <inertial>
+      <origin
+        xyz="-0.0174212924800171 -2.94655712163028E-06 3.1217804522532E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.136876540473592" />
+      <inertia
+        ixx="0.000269064085331839"
+        ixy="-2.52209195899574E-09"
+        ixz="2.67302447382434E-09"
+        iyy="0.000145154925857605"
+        iyz="1.09851694360277E-08"
+        izz="0.000145153662585153" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Left Wheel.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.764705882352941 0.725490196078431 0.96078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Left Wheel.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Left Wheel Continuous"
+    type="continuous">
+    <origin
+      xyz="-0.12423 -0.0175 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="Front Left Swerve" />
+    <child
+      link="Front Left Wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Back Left Swerve">
+    <inertial>
+      <origin
+        xyz="0.163757881155646 0.74709328998136 1.35429208087898"
+        rpy="0 0 0" />
+      <mass
+        value="0.174924198544897" />
+      <inertia
+        ixx="0.000188285476031026"
+        ixy="-6.25552016451813E-08"
+        ixz="5.12861749297964E-09"
+        iyy="0.000220427275424021"
+        iyz="-6.96857817271057E-09"
+        izz="6.62923176910346E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Left Swerve.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Left Swerve.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Left Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.76644 0.030184 -1.4286"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Left Drivetrain" />
+    <child
+      link="Back Left Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Back Left Wheel">
+    <inertial>
+      <origin
+        xyz="3.71875902849261E-06 0.0177431558834269 -2.14442144375049E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.136876540473594" />
+      <inertia
+        ixx="0.000145148779711521"
+        ixy="-3.18332762007096E-09"
+        ixz="9.52171689676487E-09"
+        iyy="0.000269064085331833"
+        iyz="1.83641851527286E-09"
+        izz="0.000145159808731234" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Left Wheel.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.764705882352941 0.725490196078431 0.96078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Left Wheel.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Left Wheel Continuous"
+    type="continuous">
+    <origin
+      xyz="0.16375 0.72866 1.2888"
+      rpy="0 0.29119 0" />
+    <parent
+      link="Back Left Swerve" />
+    <child
+      link="Back Left Wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Left Link">
+    <inertial>
+      <origin
+        xyz="0.000544839456345869 0.0251603168363681 -0.0105322256524339"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146964408338078" />
+      <inertia
+        ixx="1.33355420015165E-07"
+        ixy="-9.27861500470425E-22"
+        ixz="2.92189409237304E-22"
+        iyy="2.62938074272859E-08"
+        iyz="4.41698782721449E-08"
+        izz="1.13321146876917E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Left Link.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Left Link.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Link Revolute"
+    type="revolute">
+    <origin
+      xyz="0.01995 0.24046 0.0207"
+      rpy="0 0 1.5708" />
+    <parent
+      link="Left Drivetrain" />
+    <child
+      link="Left Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right Drivetrain">
+    <inertial>
+      <origin
+        xyz="0.0199949310694776 -0.00141813101932509 0.00216349869035126"
+        rpy="0 0 0" />
+      <mass
+        value="0.447899258732865" />
+      <inertia
+        ixx="0.000383724148659217"
+        ixy="2.44317411544526E-07"
+        ixz="7.2888264426479E-11"
+        iyy="0.000153649213953532"
+        iyz="3.11252454082565E-07"
+        izz="0.000457408262680248" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Right Drivetrain.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Right Drivetrain.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right Drivetrain Revolute"
+    type="revolute">
+    <origin
+      xyz="1.4368 -0.96631 0.9315"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Right Drivetrain" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Right Swerve">
+    <inertial>
+      <origin
+        xyz="-0.0587486393187359 -0.000608261390239284 7.87709602345643E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.174924114674695" />
+      <inertia
+        ixx="6.62922884297139E-05"
+        ixy="6.96731859009119E-09"
+        ixz="5.13235228303396E-09"
+        iyy="0.000220427277642489"
+        iyz="6.25552706738996E-08"
+        izz="0.000188285450000096" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Right Swerve.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Right Swerve.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Right Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.01995 0.19393 -0.015575"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Right Drivetrain" />
+    <child
+      link="Front Right Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Front Right Wheel">
+    <inertial>
+      <origin
+        xyz="0.0175787075398092 -3.54166176719239E-06 2.42578749687361E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.136876540643338" />
+      <inertia
+        ixx="0.000269064085357872"
+        ixy="-3.03162781899293E-09"
+        ixz="2.07727034547853E-09"
+        iyy="0.000145150315180053"
+        iyz="1.02586436328995E-08"
+        izz="0.000145158273384913" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Right Wheel.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.764705882352941 0.725490196078431 0.96078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Front Right Wheel.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Front Right Wheel Continuous"
+    type="continuous">
+    <origin
+      xyz="-0.12423 0.0175 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="Front Right Swerve" />
+    <child
+      link="Front Right Wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Back Right Swerve">
+    <inertial>
+      <origin
+        xyz="-0.058748677013288 -0.000608271600178845 7.8762233932661E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.174924203738847" />
+      <inertia
+        ixx="6.62923191874248E-05"
+        ixy="6.96786007562469E-09"
+        ixz="5.13251075744084E-09"
+        iyy="0.000220427284679385"
+        iyz="6.25527664348366E-08"
+        izz="0.000188285484282585" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Right Swerve.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Right Swerve.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Right Swerve Revolute"
+    type="revolute">
+    <origin
+      xyz="0.02005 -0.19393 -0.015575"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Right Drivetrain" />
+    <child
+      link="Back Right Swerve" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Back Right Wheel">
+    <inertial>
+      <origin
+        xyz="0.0175787075199824 -2.90285996773498E-06 3.16245411802196E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.136876540473596" />
+      <inertia
+        ixx="0.000269064085331826"
+        ixy="-2.48467635928183E-09"
+        ixz="2.70783881010707E-09"
+        iyy="0.000145155231108538"
+        iyz="1.0963355054976E-08"
+        izz="0.000145153357334181" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Right Wheel.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.764705882352941 0.725490196078431 0.96078431372549 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Back Right Wheel.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Back Right Wheel Continuous"
+    type="continuous">
+    <origin
+      xyz="-0.12423 0.0175 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="Back Right Swerve" />
+    <child
+      link="Back Right Wheel" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Right Link">
+    <inertial>
+      <origin
+        xyz="0.00054483954372575 -0.0243562939358434 -0.0101750814222373"
+        rpy="0 0 0" />
+      <mass
+        value="0.00146964418751605" />
+      <inertia
+        ixx="1.33355420385561E-07"
+        ixy="-8.4630718175827E-22"
+        ixz="-2.44415305351136E-22"
+        iyy="2.62303438698525E-08"
+        iyz="-4.41072660912267E-08"
+        izz="1.13384611061095E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Right Link.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Right Link.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right Link Revolute"
+    type="revolute">
+    <origin
+      xyz="0.02005 -0.24046 0.0207"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="Right Drivetrain" />
+    <child
+      link="Right Link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Diff Bar">
+    <inertial>
+      <origin
+        xyz="0.00502629122634413 1.70556493372942E-08 -1.9954357523333E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0422701126497423" />
+      <inertia
+        ixx="8.39751789499571E-05"
+        ixy="3.09359490992592E-12"
+        ixz="1.8396748373525E-13"
+        iyy="6.81025143710243E-06"
+        iyz="1.9307698394588E-13"
+        izz="7.76911423247768E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Diff Bar.glb" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF_Assembly/colored-meshes/Diff Bar.glb" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Diff Bar Revolute"
+    type="revolute">
+    <origin
+      xyz="1.6678 -0.96631 0.807"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Diff Bar" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
