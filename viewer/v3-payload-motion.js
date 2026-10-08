@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {createV3Suspension} from './v3-suspension.js';
+import {createV3Suspension} from './v3-suspension.js?v=20261008-animation2';
 const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 const smooth=t=>t*t*t*(t*(t*6-15)+10);
 export function createV3PayloadMotion(robot,scene){

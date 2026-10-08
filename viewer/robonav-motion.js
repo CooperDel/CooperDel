@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import {createRoboNavSuspension} from './robonav-suspension.js';
-import {createRoboNavKinematics} from './robonav-kinematics.js';
+import {createRoboNavSuspension} from './robonav-suspension.js?v=20261008-animation2';
+import {createRoboNavKinematics} from './robonav-kinematics.js?v=20261008-animation2';
 const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 const ease=x=>{x=THREE.MathUtils.clamp(x,0,1);return x*x*x*(10+x*(-15+6*x));};
 const progress=(t,a,b)=>ease((t-a)/(b-a));

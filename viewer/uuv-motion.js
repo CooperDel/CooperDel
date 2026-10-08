@@ -1,7 +1,7 @@
 import * as THREE from 'three';
-import { createUUVManipulator } from './uuv-manipulator.js';
-import { createInspectionCourse } from './uuv-inspection-course.js';
-import { createUUVThrusters } from './uuv-thrusters.js';
+import { createUUVManipulator } from './uuv-manipulator.js?v=20261008-animation2';
+import { createInspectionCourse } from './uuv-inspection-course.js?v=20261008-animation2';
+import { createUUVThrusters } from './uuv-thrusters.js?v=20261008-animation2';
 
 // A visual swim demonstration: coordinated thrust vectoring, not fluid dynamics.
 export function createUUVMotion(robot, scene) {

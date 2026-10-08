@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { robonavCADMaterials } from './robonav-cad-materials.js';
+import { robonavCADMaterials } from './robonav-cad-materials.js?v=20261008-animation2';
 export function robonavMaterialForMesh(url,fallback){
   const name=decodeURIComponent(url.split(/[?#]/)[0].split('/').pop()).replace(/\.stl$/i,'');
   const source=robonavCADMaterials[name];

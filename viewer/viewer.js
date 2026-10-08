@@ -6,14 +6,14 @@ import { STLLoader } from 'three/examples/jsm/loaders/STLLoader.js';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { ColladaLoader } from 'three/examples/jsm/loaders/ColladaLoader.js';
 import URDFLoader from 'urdf-loader';
-import { resolveSelectedFile, jointRange, jointValueAt } from './model-utils.js';
-import { createNovaMotion } from './nova-motion.js';
-import { createRoboNavMotion } from './robonav-motion.js';
-import { createUUVMotion } from './uuv-motion.js';
-import { createV3FleetMotion } from './v3-fleet-motion.js';
+import { resolveSelectedFile, jointRange, jointValueAt } from './model-utils.js?v=20261008-animation2';
+import { createNovaMotion } from './nova-motion.js?v=20261008-animation2';
+import { createRoboNavMotion } from './robonav-motion.js?v=20261008-animation2';
+import { createUUVMotion } from './uuv-motion.js?v=20261008-animation2';
+import { createV3FleetMotion } from './v3-fleet-motion.js?v=20261008-animation2';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
-import './image-lightbox.js';
-import { createV3PayloadMotion } from './v3-payload-motion.js';
+import './image-lightbox.js?v=20261008-animation2';
+import { createV3PayloadMotion } from './v3-payload-motion.js?v=20261008-animation2';
 
 
 const extension = name => name.split(/[?#]/)[0].split('.').pop().toLowerCase();

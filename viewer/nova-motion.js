@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { coursePose, courseLength, rocks, block, rockHeight, rockSurface, lunarHeight } from './nova-course.js';
+import { coursePose, courseLength, rocks, block, rockHeight, rockSurface, lunarHeight } from './nova-course.js?v=20261008-animation2';
 
 // Kinematic closed linkage. Connector ends are idealized spherical bearings.
 export function createNovaMotion(robot, scene) {

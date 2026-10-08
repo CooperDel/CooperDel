@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { novaCADMaterials } from './nova-cad-materials.js';
+import { novaCADMaterials } from './nova-cad-materials.js?v=20261008-animation2';
 
 export function novaMaterialForMesh(url, fallback) {
   const name=decodeURIComponent(url.split(/[?#]/)[0].split('/').pop()).replace(/\.stl$/i,'');

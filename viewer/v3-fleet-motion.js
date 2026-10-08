@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {createV3Suspension} from './v3-suspension.js';
+import {createV3Suspension} from './v3-suspension.js?v=20261008-animation2';
 export const lanes=[-1.4,0,1.4];
 let seed=83147;
 const random=()=>{seed=(1664525*seed+1013904223)>>>0;return seed/4294967296;};
