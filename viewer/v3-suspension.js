@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 function bounds(link){
- const box=new THREE.Box3();link.traverse(c=>{if(c.isURDFVisual)c.traverse(mesh=>{if(mesh.isMesh){mesh.geometry.computeBoundingBox();box.union(mesh.geometry.boundingBox);}});});return box;
+ link.updateWorldMatrix(true,true);const inverse=link.matrixWorld.clone().invert(),box=new THREE.Box3();link.traverse(mesh=>{if(mesh.isMesh){mesh.geometry.computeBoundingBox();box.union(mesh.geometry.boundingBox.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverse,mesh.matrixWorld)));}});return box;
 }
 export function createV3Suspension(robot,heightAt){
  const joint=name=>robot.joints[`${name} Revolute`] || robot.joints[`${name} Continuous`];
