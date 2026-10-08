@@ -1,3 +1,4 @@
+import {queueMesh} from './mesh-queue.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -201,7 +202,7 @@ async function initialize(root) {
         const jobs=[];
         loader.loadMeshCb = (url, loadingManager, material, done) => {
           if(url.includes('/CooperDel/optimized-meshes/')) url=url.slice(url.indexOf('/CooperDel/optimized-meshes/'));
-          const job = (async()=>{
+          const job = queueMesh(async()=>{
             try {
               let mesh;
               switch(extension(url)) {
@@ -213,7 +214,7 @@ async function initialize(root) {
               }
               done(mesh);
             } catch(error) { failures.push(error.message); done(null,error); }
-          })(); jobs.push(job);
+          }); jobs.push(job);
         };
         // One sentinel keeps texture completion in the same loading batch.
         const complete = new Promise(resolveDone => { manager.onLoad=resolveDone; });
