@@ -35,7 +35,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/f64bd32c62f5e2a0522652f2.glb" />
+          filename="/CooperDel/optimized-meshes/f64bd32c62f5e2a0522652f2.glb" />
       </geometry>
     </collision>
   </link>
@@ -70,7 +70,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/5bb1f5d2ec4a9ee3f54741fd.glb" />
+          filename="/CooperDel/optimized-meshes/5bb1f5d2ec4a9ee3f54741fd.glb" />
       </geometry>
     </collision>
   </link>
@@ -123,7 +123,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/d2a0479d5f70f98e3c15ca7d.glb" />
+          filename="/CooperDel/optimized-meshes/d2a0479d5f70f98e3c15ca7d.glb" />
       </geometry>
     </collision>
   </link>
@@ -176,7 +176,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/8713ea1ba7fc96aa7fd96fc1.glb" />
+          filename="/CooperDel/optimized-meshes/8713ea1ba7fc96aa7fd96fc1.glb" />
       </geometry>
     </collision>
   </link>
@@ -229,7 +229,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/89ee18f9d2e31ca57a6b6c75.glb" />
+          filename="/CooperDel/optimized-meshes/89ee18f9d2e31ca57a6b6c75.glb" />
       </geometry>
     </collision>
   </link>
@@ -282,7 +282,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/0b9d545e9ddc2bed82cb6ff0.glb" />
+          filename="/CooperDel/optimized-meshes/0b9d545e9ddc2bed82cb6ff0.glb" />
       </geometry>
     </collision>
   </link>
@@ -335,7 +335,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/2b5f507e03ccdfab36ee4c26.glb" />
+          filename="/CooperDel/optimized-meshes/2b5f507e03ccdfab36ee4c26.glb" />
       </geometry>
     </collision>
   </link>
@@ -388,7 +388,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/733a8cb94bd25aa6aa8aa903.glb" />
+          filename="/CooperDel/optimized-meshes/733a8cb94bd25aa6aa8aa903.glb" />
       </geometry>
     </collision>
   </link>
@@ -441,7 +441,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/a84aec68919ad6757d4eb027.glb" />
+          filename="/CooperDel/optimized-meshes/a84aec68919ad6757d4eb027.glb" />
       </geometry>
     </collision>
   </link>
@@ -494,7 +494,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/055874eedfae54f8b818d390.glb" />
+          filename="/CooperDel/optimized-meshes/055874eedfae54f8b818d390.glb" />
       </geometry>
     </collision>
   </link>
@@ -547,7 +547,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/ec433afcb09af2a97c30abe7.glb" />
+          filename="/CooperDel/optimized-meshes/ec433afcb09af2a97c30abe7.glb" />
       </geometry>
     </collision>
   </link>
@@ -600,7 +600,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/f96d05c02834b663e79b96ba.glb" />
+          filename="/CooperDel/optimized-meshes/f96d05c02834b663e79b96ba.glb" />
       </geometry>
     </collision>
   </link>
@@ -653,7 +653,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/d1c5c8dcee46a3b0a2d8788f.glb" />
+          filename="/CooperDel/optimized-meshes/d1c5c8dcee46a3b0a2d8788f.glb" />
       </geometry>
     </collision>
   </link>
@@ -706,7 +706,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/19d09bc08f45a44ca2d00310.glb" />
+          filename="/CooperDel/optimized-meshes/19d09bc08f45a44ca2d00310.glb" />
       </geometry>
     </collision>
   </link>
@@ -759,7 +759,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/fedf202dd6bcae2415558765.glb" />
+          filename="/CooperDel/optimized-meshes/fedf202dd6bcae2415558765.glb" />
       </geometry>
     </collision>
   </link>
@@ -812,7 +812,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/a208f5f7b5cb464ebe3ad1b8.glb" />
+          filename="/CooperDel/optimized-meshes/a208f5f7b5cb464ebe3ad1b8.glb" />
       </geometry>
     </collision>
   </link>
@@ -865,7 +865,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/d751a83e427bde9bce0274d6.glb" />
+          filename="/CooperDel/optimized-meshes/d751a83e427bde9bce0274d6.glb" />
       </geometry>
     </collision>
   </link>
@@ -918,7 +918,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/b50544be46b277866377e87c.glb" />
+          filename="/CooperDel/optimized-meshes/b50544be46b277866377e87c.glb" />
       </geometry>
     </collision>
   </link>
@@ -971,7 +971,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/f88600da8ff8dacbff222463.glb" />
+          filename="/CooperDel/optimized-meshes/f88600da8ff8dacbff222463.glb" />
       </geometry>
     </collision>
   </link>
@@ -1024,7 +1024,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/cc612995bcd0f776a248095b.glb" />
+          filename="/CooperDel/optimized-meshes/cc612995bcd0f776a248095b.glb" />
       </geometry>
     </collision>
   </link>
@@ -1077,7 +1077,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/4d0e346506e32894c0c15da0.glb" />
+          filename="/CooperDel/optimized-meshes/4d0e346506e32894c0c15da0.glb" />
       </geometry>
     </collision>
   </link>
@@ -1125,7 +1125,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/dfc1cc7b810f2a99b36e598c.glb" />
+          filename="/CooperDel/optimized-meshes/dfc1cc7b810f2a99b36e598c.glb" />
       </geometry>
     </collision>
   </link>
@@ -1178,7 +1178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/4219ee516913e52d257545df.glb" />
+          filename="/CooperDel/optimized-meshes/4219ee516913e52d257545df.glb" />
       </geometry>
     </collision>
   </link>
@@ -1226,7 +1226,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/ef16d50b6934643e9bf4f529.glb" />
+          filename="/CooperDel/optimized-meshes/ef16d50b6934643e9bf4f529.glb" />
       </geometry>
     </collision>
   </link>
@@ -1279,7 +1279,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/bd28cb8f7ad4493e99b0996c.glb" />
+          filename="/CooperDel/optimized-meshes/bd28cb8f7ad4493e99b0996c.glb" />
       </geometry>
     </collision>
   </link>
@@ -1332,7 +1332,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/fd454112d4216b4eaf682e82.glb" />
+          filename="/CooperDel/optimized-meshes/fd454112d4216b4eaf682e82.glb" />
       </geometry>
     </collision>
   </link>
@@ -1385,7 +1385,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
+          filename="/CooperDel/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
       </geometry>
     </collision>
   </link>
@@ -1433,7 +1433,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/2a90512bcb5536850cecc1ff.glb" />
+          filename="/CooperDel/optimized-meshes/2a90512bcb5536850cecc1ff.glb" />
       </geometry>
     </collision>
   </link>
@@ -1486,7 +1486,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
+          filename="/CooperDel/optimized-meshes/03ea8c03e0829d84365d8677.glb" />
       </geometry>
     </collision>
   </link>
@@ -1534,7 +1534,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/969b36054072400807a5aef4.glb" />
+          filename="/CooperDel/optimized-meshes/969b36054072400807a5aef4.glb" />
       </geometry>
     </collision>
   </link>
@@ -1587,7 +1587,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/25410efacd8099f8da87bec5.glb" />
+          filename="/CooperDel/optimized-meshes/25410efacd8099f8da87bec5.glb" />
       </geometry>
     </collision>
   </link>
@@ -1640,7 +1640,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/09ad16d15b586e8172f60577.glb" />
+          filename="/CooperDel/optimized-meshes/09ad16d15b586e8172f60577.glb" />
       </geometry>
     </collision>
   </link>
@@ -1693,7 +1693,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/690aaa8f1668c2d9297ba957.glb" />
+          filename="/CooperDel/optimized-meshes/690aaa8f1668c2d9297ba957.glb" />
       </geometry>
     </collision>
   </link>
@@ -1746,7 +1746,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/optimized-meshes/56bd7c7e1274b5cd4ada78df.glb" />
+          filename="/CooperDel/optimized-meshes/56bd7c7e1274b5cd4ada78df.glb" />
       </geometry>
     </collision>
   </link>

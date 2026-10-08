@@ -183,7 +183,7 @@ async function initialize(root) {
       if (/^(blob:|data:)/.test(request)) return request;
       if (files.length) return blob(resolveSelectedFile(request,files,base));
       const resolved = new URL(request,location.origin + base);
-      if (resolved.origin !== location.origin || !['/assets/','/GLBs/','/URDFs/'].some(prefix => resolved.pathname.startsWith(prefix))) throw new Error('Model assets must be local files under /assets/, /GLBs/, or /URDFs/. External URLs are not loaded.');
+      if (resolved.origin !== location.origin || !['/CooperDel/assets/','/CooperDel/GLBs/','/CooperDel/URDFs/'].some(prefix => resolved.pathname.startsWith(prefix))) throw new Error('Model assets must be local files under /CooperDel/assets/, /CooperDel/GLBs/, or /CooperDel/URDFs/. External URLs are not loaded.');
       return resolved.href;
     };
     manager.setURLModifier(resolve);
@@ -200,7 +200,7 @@ async function initialize(root) {
         const loader = new URDFLoader(manager); loader.packages = name => files.length ? name : (config.packages?.[name] || `${base}${name}`);
         const jobs=[];
         loader.loadMeshCb = (url, loadingManager, material, done) => {
-          if(url.includes('/optimized-meshes/')) url=url.slice(url.indexOf('/optimized-meshes/'));
+          if(url.includes('/CooperDel/optimized-meshes/')) url=url.slice(url.indexOf('/CooperDel/optimized-meshes/'));
           const job = (async()=>{
             try {
               let mesh;
@@ -208,7 +208,7 @@ async function initialize(root) {
                 case 'stl': mesh=new THREE.Mesh(await new STLLoader(manager).loadAsync(url),material); break;
                 case 'dae': mesh=(await new ColladaLoader(manager).loadAsync(url)).scene; break;
                 case 'obj': mesh=await new OBJLoader(manager).loadAsync(url); mesh.traverse(c=>{if(c.isMesh)c.material=material;}); break;
-                case 'glb': case 'gltf': mesh=await gltf(url); if(config.materialFromURDF || url.includes('/optimized-meshes/'))mesh.traverse(c=>{if(c.isMesh)c.material=material;}); break;
+                case 'glb': case 'gltf': mesh=await gltf(url); if(config.materialFromURDF || url.includes('/CooperDel/optimized-meshes/'))mesh.traverse(c=>{if(c.isMesh)c.material=material;}); break;
                 default: throw new Error(`Unsupported URDF mesh: ${url}. Use STL, DAE, OBJ, or GLB.`);
               }
               done(mesh);

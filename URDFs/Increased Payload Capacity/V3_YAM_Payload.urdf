@@ -867,7 +867,7 @@
     <visual>
       <origin xyz="0 0 -0.0006" rpy="0 0 1.5707963267948968"/>
       <geometry>
-        <mesh filename="/optimized-meshes/5ac61c0313ed00c38655e416.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/5ac61c0313ed00c38655e416.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -887,7 +887,7 @@
     <visual>
       <origin xyz="0.000000526159 0.000000234355 -0.0632" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/30dab41f14bae95d737abca3.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/30dab41f14bae95d737abca3.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -901,21 +901,21 @@
     <visual>
       <origin xyz="0.0199992 -0.1041 -0.0000244738" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/9fd96f5ad387fe7dd96eaa65.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/9fd96f5ad387fe7dd96eaa65.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="0.0199992 -0.1041 -0.0000244738" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/33c0e7ef538e2c4473efa9c4.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/33c0e7ef538e2c4473efa9c4.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="0.0199992 -0.1041 -0.0000244738" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/09f08e7dead2d6363618471a.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/09f08e7dead2d6363618471a.glb"/>
       </geometry>
       <material name="YAM_white"/>
     </visual>
@@ -946,28 +946,28 @@
     <visual>
       <origin xyz="-0.244001 0.104101 0.0000244738" rpy="1.5707963267948966 1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/888b5919d10dbfb59b964c3c.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/888b5919d10dbfb59b964c3c.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="-0.244001 0.104101 0.0000244738" rpy="1.5707963267948966 1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/2d64b18f1e70b0460eb53335.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/2d64b18f1e70b0460eb53335.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="-0.244001 0.104101 0.0000244738" rpy="1.5707963267948966 1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/db3708da6b14daf3fc9a1909.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/db3708da6b14daf3fc9a1909.glb"/>
       </geometry>
       <material name="YAM_white"/>
     </visual>
     <visual>
       <origin xyz="-0.244001 0.104101 0.0000244738" rpy="1.5707963267948966 1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/74969d09b8b7f75cc984c5c7.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/74969d09b8b7f75cc984c5c7.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -993,7 +993,7 @@
     <visual>
       <origin xyz="0.00100023 0.164101 0.0000244738" rpy="1.5707963267948966 1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/b879cc07f547b7a2ac52e428.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/b879cc07f547b7a2ac52e428.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -1013,7 +1013,7 @@
     <visual>
       <origin xyz="0 -0.0749971 0.203601" rpy="3.141590000009793 0 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/af220d2a51e8444392aef36e.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/af220d2a51e8444392aef36e.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -1033,14 +1033,14 @@
     <visual>
       <origin xyz="0 -0.164101 -0.110597" rpy="-1.5707963267948968 0 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/e79614869bd2283f70fafa15.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/e79614869bd2283f70fafa15.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="0 -0.164101 -0.110597" rpy="-1.5707963267948968 0 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/32b62f14f00ea82bfc79b935.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/32b62f14f00ea82bfc79b935.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -1072,14 +1072,14 @@
     <visual>
       <origin xyz="0.171097 -0.203301 0.037" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/72d2178789dd5e0358c2caf9.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/72d2178789dd5e0358c2caf9.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="0.171097 -0.203301 0.037" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/ca8788184d54f30c18482cb9.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/ca8788184d54f30c18482cb9.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
@@ -1175,14 +1175,14 @@
     <visual>
       <origin xyz="0.171097 -0.124901 -0.037" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/18bb99691eed524393e8f3a0.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/18bb99691eed524393e8f3a0.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
     <visual>
       <origin xyz="0.171097 -0.124901 -0.037" rpy="-1.5707963267948966 -1.5707963267948966 0"/>
       <geometry>
-        <mesh filename="/optimized-meshes/6513dbd192d2bf3a4f701623.glb"/>
+        <mesh filename="/CooperDel/optimized-meshes/6513dbd192d2bf3a4f701623.glb"/>
       </geometry>
       <material name="YAM_black"/>
     </visual>
