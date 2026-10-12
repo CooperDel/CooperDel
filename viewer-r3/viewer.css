@@ -173,3 +173,7 @@ html:has(#me2110-design) :is(#me2110-design,#customer-interaction,#design-concep
 @media(min-width:761px){#design.scroll-dual-cad .scroll-cad-bullet-row{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:5%}#design.scroll-dual-cad .scroll-cad-bullet-row .viewer-stage{height:clamp(440px,48vh,560px)}#design.scroll-dual-cad .scroll-cad-bullet-row>.scroll-cad-notes{min-height:clamp(440px,48vh,560px);font-size:14px;line-height:1.45}#design.scroll-dual-cad .scroll-cad-bullet-row .scroll-cad-notes h3{font-size:21px;margin-bottom:8px}#design.scroll-dual-cad .scroll-cad-bullet-row .scroll-cad-notes ul{margin-bottom:18px;padding-left:20px}#design.scroll-dual-cad .scroll-cad-bullet-row .scroll-cad-notes ul:last-child{margin-bottom:0}#design.scroll-dual-cad .scroll-cad-bullet-row .scroll-cad-notes li{margin:6px 0}}
 
 @media(min-width:761px){#design.scroll-dual-cad .scroll-cad-bullet-row .scroll-cad-caption{top:clamp(440px,48vh,560px)}}
+
+.model-viewer[data-config*='DIC.glb']{padding:0;border:0;background:transparent}.model-viewer[data-config*='DIC.glb'] .viewer-stage{height:clamp(320px,58vh,620px);border:4px solid #B3A369}@media(max-width:760px){.model-viewer[data-config*='DIC.glb'] .viewer-stage{height:42vh;min-height:280px}}
+
+.model-viewer[data-config*='Schlieren.glb']{padding:0;border:0;background:transparent}.model-viewer[data-config*='Schlieren.glb'] .viewer-stage{height:clamp(320px,58vh,620px);border:4px solid #B3A369}@media(max-width:760px){.model-viewer[data-config*='Schlieren.glb'] .viewer-stage{height:42vh;min-height:280px}}

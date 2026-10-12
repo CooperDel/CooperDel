@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.category-card>.media{display:flex;align-items:center;justify-content:center;height:180px;margin:22px 0 26px;border:0;background:transparent;overflow:hidden}.category-card>.media img{display:block;width:100%;height:180px;aspect-ratio:auto;object-fit:cover;border:0;background:transparent}.category-card[href="/CooperDel/projects/robonav/"]>.media img{object-position:center 65%}.category-card[href="/CooperDel/projects/aerospace-robotics-lab/"]>.media img{width:180px;max-width:100%;object-fit:cover;object-position:3.1% center;border-radius:50%}.category-card[href="/CooperDel/projects/other/"]>.media img{object-fit:contain}.version-buttons{align-items:flex-start}.version-photo-card{display:block;width:min(360px,100%);border:1px solid var(--line);background:transparent}.version-photo-card:hover{border-color:var(--accent)}.version-photo-card .media{overflow:hidden;background:transparent}.version-photo-card .media img{aspect-ratio:1.65;object-fit:cover;background:transparent;transform:scale(1.06)}.version-photo-card>span{display:flex;justify-content:space-between;padding:15px 20px;color:var(--accent)}
+.category-card>.media{display:flex;align-items:center;justify-content:center;height:180px;margin:22px 0 26px;border:0;background:transparent;overflow:hidden}.category-card>.media img{display:block;width:100%;height:180px;aspect-ratio:auto;object-fit:cover;border:0;background:transparent}.category-card[href="/CooperDel/projects/robonav/"]>.media img{object-position:center 65%}.category-card[href="/CooperDel/projects/aerospace-robotics-lab/"]>.media img{width:100%;height:180px;object-fit:contain;object-position:center;border-radius:0}.category-card[href="/CooperDel/projects/other/"]>.media img{object-fit:contain}.version-buttons{align-items:flex-start}.version-photo-card{display:block;width:min(360px,100%);border:1px solid var(--line);background:transparent}.version-photo-card:hover{border-color:var(--accent)}.version-photo-card .media{overflow:hidden;background:transparent}.version-photo-card .media img{aspect-ratio:1.65;object-fit:cover;background:transparent;transform:scale(1.06)}.version-photo-card>span{display:flex;justify-content:space-between;padding:15px 20px;color:var(--accent)}
 .project-card[href="/CooperDel/projects/robonav/project-01/"] .media{overflow:hidden;background:#fff}
 .project-card[href="/CooperDel/projects/robonav/project-01/"] .media img{object-fit:contain;object-position:center;background:#fff;transform:scale(.92)}
 .interests-text{white-space:pre-line}
@@ -196,3 +196,19 @@
 ul>li::marker{color:#B3A369}
 
 .text-bullet{color:#B3A369}
+
+.bullet-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}.bullet-columns h3{font-size:24px;margin:0 0 18px}.bullet-columns .section-bullets{margin:0;color:var(--muted)}@media(max-width:640px){.bullet-columns{grid-template-columns:1fr;gap:28px}}
+
+.after-bullet-columns{margin-top:32px}
+
+.study-layout-wide .study-section:has(.bullet-columns)>.after-bullet-columns{max-width:none;width:100%}.bullet-columns{position:relative;width:100%;gap:64px}.bullet-columns::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--accent)}@media(max-width:640px){.bullet-columns{gap:28px}.bullet-columns::before{display:none}.bullet-columns>div+div{border-top:1px solid var(--accent);padding-top:28px}}
+
+.home-hero{align-items:start}.home-right{min-width:0;display:grid;gap:28px}.home-right .portrait-wrap{padding:0}.home-right .media.portrait img{width:100%;height:clamp(260px,25vw,360px);aspect-ratio:auto;object-fit:cover;object-position:center 48%}.home-featured h2{font-size:24px;margin-bottom:18px}.home-featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.home-featured-card{display:block;min-width:0}.home-featured-card .media{margin:0;background:transparent}.home-featured-card .media img{display:block;width:100%;height:auto;aspect-ratio:1.35;object-fit:contain;background:#fff;border:1px solid var(--accent)}.home-featured-card h3{font-size:18px;margin-top:12px}.home-featured-card:hover h3{color:var(--accent)}@media(max-width:640px){.home-right .media.portrait img{height:300px}.home-featured-grid{gap:16px}}
+
+.home-featured-card .media{overflow:hidden;border:1px solid var(--accent)}.home-featured-card .media img{border:0;transform:scale(1.35)}.home-featured-card:first-child .media img{transform:scale(1.9)}
+
+.home-featured h2{width:fit-content;padding-bottom:8px;border-bottom:2px solid var(--accent)}
+
+.home-right .media.portrait img{border:3px solid var(--accent)}.home-featured-card .media{border:3px solid var(--accent)}.home-featured-card h3{width:fit-content;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+
+

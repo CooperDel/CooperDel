@@ -90,14 +90,15 @@ async function initialize(root) {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   if(Number.isFinite(config.autoRotateSpeed))controls.autoRotateSpeed=config.autoRotateSpeed;
-  if(config.scrollNavigation){controls.enableZoom=false;renderer.domElement.style.touchAction='pan-y';}
+  if(robotMode && config.scrollNavigation){controls.enableZoom=false;renderer.domElement.style.touchAction='pan-y';}
   const scrollSection = config.scrollSpin === false ? null : root.closest(config.scrollSpinInOut ? '.design-intro-with-model' : '.scroll-design');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let scrollAngle = 0;
-  if (scrollSection) {
+  if (robotMode && scrollSection) {
     controls.enableZoom = false;
     renderer.domElement.style.touchAction = 'pan-y';
   }
+  if(!robotMode){controls.enableZoom=true;renderer.domElement.style.touchAction='none';const hint=root.querySelector('.viewer-hint');if(hint)hint.textContent='Drag to orbit · Right-drag to pan · Scroll or pinch to zoom.';}
   let model = null, robot = null, jointRows = [], playing = false, time = 0, previous = 0, generation = 0;
   let activeURLs = [], selectedFiles = [], selectedURDFs = [];
   let motion = null;
@@ -302,7 +303,7 @@ async function initialize(root) {
         if(Math.abs(next-current)>.01){renderer.setPixelRatio(next);resize();}
       }
     }
-    if (scrollSection) {
+    if (robotMode && scrollSection) {
       const rect = scrollSection.getBoundingClientRect();
       const progress = reducedMotion.matches ? 1 : THREE.MathUtils.clamp((innerHeight * .65 - rect.top) / (innerHeight * .85), 0, 1);
       const eased = progress * progress * (3 - 2 * progress);
@@ -315,7 +316,7 @@ async function initialize(root) {
         camera.position.sub(controls.target).applyAxisAngle(new THREE.Vector3(0,1,0), angle - scrollAngle).add(controls.target);
         scrollAngle = angle;
       }
-      controls.enabled = progress >= 1;
+      controls.enabled = !robotMode || progress >= 1;
       // Only the subsection occupying the center of the viewport keeps turning.
       // OrbitControls pauses automatic rotation while the user drags the model.
       controls.autoRotate=Number.isFinite(config.autoRotateSpeed)&&!reducedMotion.matches&&progress>=1&&rect.top<=innerHeight*.5&&rect.bottom>=innerHeight*.5;
